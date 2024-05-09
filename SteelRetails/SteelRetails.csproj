@@ -55,6 +55,9 @@
     <Compile Include="Screens\MainTemplateForm.Designer.cs">
       <DependentUpon>MainTemplateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\UserServices\UserService.cs" />
+    <Compile Include="Utilities\AppSetting.cs" />
+    <Compile Include="Utilities\ListData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,9 +84,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utilities\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icon-minimize.png" />
   </ItemGroup>
@@ -92,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimize-window-48-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBFramework\DBFramework.csproj">
+      <Project>{B7870ECB-930C-40A2-832D-7D54D4FD4DFC}</Project>
+      <Name>DBFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
