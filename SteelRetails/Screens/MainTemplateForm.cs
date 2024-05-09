@@ -22,6 +22,7 @@ namespace SteelRetails.Screens
         public MainTemplateForm()
         {
             InitializeComponent();
+            titleLabel.Text = this.Text;
         }
 
         private void topBorderPanel_MouseDown(object sender, MouseEventArgs e)
@@ -37,6 +38,11 @@ namespace SteelRetails.Screens
                 mousePoint.Offset(MouseLocation.X, MouseLocation.Y);
                 Location = mousePoint;
             }
+        }
+
+        private void iconClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
