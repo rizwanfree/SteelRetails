@@ -84,7 +84,7 @@ namespace SteelRetails.Services.UserServices
             try
             {
                 DataTable dt = db.GetDataList("uspUser_CheckLoginDetails", paras.ToArray());
-                if (dt.Rows.Count > 0)  return dt;
+                if (dt.Rows.Count > 0) return dt;
                 else
                 {
                     MessageBox.Show("Invalid Username or Password");
@@ -96,6 +96,7 @@ namespace SteelRetails.Services.UserServices
                 MessageBox.Show(ex.Message);
             }
             return null;
+        }
     }
 }
 
