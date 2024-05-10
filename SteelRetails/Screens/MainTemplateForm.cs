@@ -22,27 +22,12 @@ namespace SteelRetails.Screens
         public MainTemplateForm()
         {
             InitializeComponent();
-            titleLabel.Text = this.Text;
+            
         }
 
-        private void topBorderPanel_MouseDown(object sender, MouseEventArgs e)
+        private void MainTemplateForm_Load(object sender, EventArgs e)
         {
-            this.MouseLocation = new Point(-e.X, -e.Y);
-        }
-
-        private void topBorderPanel_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                Point mousePoint = Control.MousePosition;
-                mousePoint.Offset(MouseLocation.X, MouseLocation.Y);
-                Location = mousePoint;
-            }
-        }
-
-        private void iconClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            
         }
     }
 }
