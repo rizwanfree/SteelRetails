@@ -17,7 +17,7 @@ namespace SteelRetails
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainTemplateForm());
+            Application.Run(new DashboardForm());
         }
     }
 }

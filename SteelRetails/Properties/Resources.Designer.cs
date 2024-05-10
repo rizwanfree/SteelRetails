@@ -83,6 +83,16 @@ namespace SteelRetails.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lock_silver {
+            get {
+                object obj = ResourceManager.GetObject("lock-silver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minimize_window_48_modified {
             get {
                 object obj = ResourceManager.GetObject("minimize-window-48-modified", resourceCulture);
